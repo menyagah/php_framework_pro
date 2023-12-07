@@ -1,0 +1,20 @@
+{
+  "name": "menyagah/myphp-framework",
+  "description": "A php framework built from scratch",
+  "minimum-stability": "dev",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Martin Nyagah",
+      "email": "menyagah27@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/",
+      "MartinNyagah\\Framework\\": "framework/"
+    }
+  },
+  "require": {
+  }
+}
