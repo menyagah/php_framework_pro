@@ -8,4 +8,4 @@
 
 
 // send response (string of content)
-echo 'Hello World';
+echo 'Hello World we';
