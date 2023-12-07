@@ -11,21 +11,27 @@ class Kernel
     {
 
         $dispatcher = simpleDispatcher(function (RouteCollector $routeCollector){
-            $routeCollector->addRoute('GET', '/', function (){
-                $content = '<h1>Hello World web</h1>';
-                return new Response( $content);
-            });
-            $routeCollector->addRoute('GET', '/post/{id:\d+}', function ($routeParams){
-                $content = "<h1>This is post {$routeParams['id']}</h1>";
-                return new Response( $content);
-            });
+            $routes = include BASE_PATH . '/routes/web.php';
+
+            foreach ($routes as $route){
+                $routeCollector->addRoute(...$route);
+            }
+//            $routeCollector->addRoute('GET', '/', function (){
+//                $content = '<h1>Hello World web</h1>';
+//                return new Response( $content);
+//            });
+//            $routeCollector->addRoute('GET', '/post/{id:\d+}', function ($routeParams){
+//                $content = "<h1>This is post {$routeParams['id']}</h1>";
+//                return new Response( $content);
+//            });
         });
 
        $routeInfo = $dispatcher->dispatch(
            $request->getMethod(),
            $request->getPathInfo()
        );
-       [$status, $handler, $vars] = $routeInfo;
-       return $handler($vars);
+       [$status,[$controller, $method], $vars] = $routeInfo;
+       $response = (new $controller())->$method($vars);
+       return $response;
     }
 }
