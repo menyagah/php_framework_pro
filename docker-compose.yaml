@@ -7,7 +7,7 @@ services:
       - ./public:/var/www/html/public
 
     ports:
-      - "80:80"
+      - "8100:80"
 
   #application
   app:
