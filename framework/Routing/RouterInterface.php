@@ -6,5 +6,5 @@ use MartinNyagah\Framework\Http\Request;
 
 interface RouterInterface
 {
-    public static function dispatch(Request $request);
+    public function dispatch(Request $request);
 }

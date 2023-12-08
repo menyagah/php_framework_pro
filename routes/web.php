@@ -5,5 +5,8 @@ use App\Controller\PostsController;
 
 return [
     ['GET', '/', [HomeController::class, 'index']],
-    ['GET', '/posts/{id:\d+}', [PostsController::class, 'show']]
+    ['GET', '/posts/{id:\d+}', [PostsController::class, 'show']],
+    ['GET', '/hello/{name:.+}', function (string $name) {
+        return new \MartinNyagah\Framework\Http\Response("Hello $name");
+    }]
 ];
