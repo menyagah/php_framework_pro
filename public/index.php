@@ -9,15 +9,10 @@ define('BASE_PATH', dirname(__DIR__));
 require_once dirname(__DIR__) . '/vendor/autoload.php';
 // request received
 $request = Request::createFromGlobals();
-
+$router = new \MartinNyagah\Framework\Routing\Router();
 // perform some logic
-
-
+$kernel = new Kernel($router);
 // send response (string of content)
-//$content = '<h1>Hello World web</h1>';
-//$response = new Response(content: $content, status:  200, headers: []);
-
-$kernel = new Kernel();
 $response = $kernel->handle($request);
 
 $response->send();
