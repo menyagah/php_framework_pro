@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-use MartinNyagah\framework\src\Http\Response;
+use MartinNyagah\Framework\Http\Response;
 
 class PostsController
 {

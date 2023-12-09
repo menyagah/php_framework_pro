@@ -13,9 +13,9 @@ $container = require BASE_PATH . '/config/services.php';
 
 // request received
 $request = Request::createFromGlobals();
-$router = new \MartinNyagah\Framework\Routing\Router();
+
 // perform some logic
-$kernel = new Kernel($router);
+$kernel = $container->get(Kernel::class);
 // send response (string of content)
 $response = $kernel->handle($request);
 
