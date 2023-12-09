@@ -1,0 +1,24 @@
+{
+  "name": "menyagah/myphp-framework",
+  "description": "A php framework built from scratch",
+  "minimum-stability": "dev",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Martin Nyagah",
+      "email": "menyagah27@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "MartinNyagah\\Framework\\": "src/"
+    }
+  },
+  "require-dev": {
+    "symfony/var-dumper": "7.1.x-dev"
+  },
+  "require": {
+    "nikic/fast-route": "2.0.x-dev",
+    "league/container": "^4.0.0"
+  }
+}

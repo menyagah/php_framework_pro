@@ -4,12 +4,13 @@ namespace MartinNyagah\Framework\Http;
 
 
 use MartinNyagah\Framework\Routing\Router;
+use MartinNyagah\Framework\Routing\RouterInterface;
 
 
 class Kernel
 {
 
-    public function __construct(private Router $router)
+    public function __construct(private RouterInterface $router)
     {
     }
 

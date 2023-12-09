@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7885e0565f5e645a1f5a0b947fc9847d",
+    "content-hash": "55fd0b7b4d9440a57d9be01ef14a7350",
     "packages": [
         {
             "name": "league/container",
@@ -88,41 +88,6 @@
                 }
             ],
             "time": "2022-02-02T09:18:15+00:00"
-        },
-        {
-            "name": "menyagah/myphp-framework",
-            "version": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "framework",
-                "reference": "af0763c25f1987fd5d075644774a1d799bfcd0e9"
-            },
-            "require": {
-                "league/container": "^4.0.0",
-                "nikic/fast-route": "2.0.x-dev"
-            },
-            "require-dev": {
-                "symfony/var-dumper": "7.1.x-dev"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "MartinNyagah\\Framework\\": "src/"
-                }
-            },
-            "license": [
-                "proprietary"
-            ],
-            "authors": [
-                {
-                    "name": "Martin Nyagah",
-                    "email": "menyagah27@gmail.com"
-                }
-            ],
-            "description": "A php framework built from scratch",
-            "transport-options": {
-                "relative": true
-            }
         },
         {
             "name": "nikic/fast-route",
@@ -417,7 +382,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "menyagah/myphp-framework": 20,
+        "nikic/fast-route": 20,
         "symfony/var-dumper": 20
     },
     "prefer-stable": false,

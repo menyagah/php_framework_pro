@@ -1,6 +1,6 @@
 <?php return array(
     'root' => array(
-        'name' => 'menyagah/myphp-framework',
+        'name' => '__root__',
         'pretty_version' => '1.0.0+no-version-set',
         'version' => '1.0.0.0',
         'reference' => NULL,
@@ -10,12 +10,30 @@
         'dev' => true,
     ),
     'versions' => array(
-        'menyagah/myphp-framework' => array(
+        '__root__' => array(
             'pretty_version' => '1.0.0+no-version-set',
             'version' => '1.0.0.0',
             'reference' => NULL,
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'league/container' => array(
+            'pretty_version' => '4.x-dev',
+            'version' => '4.9999999.9999999.9999999-dev',
+            'reference' => '388e992884ab75632d93dbaf4d29ec024d64b964',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../league/container',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'menyagah/myphp-framework' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'af0763c25f1987fd5d075644774a1d799bfcd0e9',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../menyagah/myphp-framework',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
@@ -29,6 +47,29 @@
                 0 => '2.0.x-dev',
             ),
             'dev_requirement' => false,
+        ),
+        'orno/di' => array(
+            'dev_requirement' => false,
+            'replaced' => array(
+                0 => '~2.0',
+            ),
+        ),
+        'psr/container' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '707984727bd5b2b670e59559d3ed2500240cf875',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../psr/container',
+            'aliases' => array(
+                0 => '2.0.x-dev',
+            ),
+            'dev_requirement' => false,
+        ),
+        'psr/container-implementation' => array(
+            'dev_requirement' => false,
+            'provided' => array(
+                0 => '^1.0',
+            ),
         ),
         'symfony/polyfill-mbstring' => array(
             'pretty_version' => '1.x-dev',

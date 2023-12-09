@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Controller;
-use MartinNyagah\Framework\Http\Response;
+use MartinNyagah\framework\src\Http\Response;
 
 class HomeController
 {
