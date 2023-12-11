@@ -19,6 +19,8 @@
   },
   "require": {
     "nikic/fast-route": "2.0.x-dev",
-    "league/container": "^4.0.0"
+    "psr/container": "2.0.x-dev",
+    "league/container": "^4.0.0",
+    "symfony/dotenv": "7.1.x-dev"
   }
 }

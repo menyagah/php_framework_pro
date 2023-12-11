@@ -93,11 +93,13 @@
             "dist": {
                 "type": "path",
                 "url": "framework",
-                "reference": "af0763c25f1987fd5d075644774a1d799bfcd0e9"
+                "reference": "09d5658b159c1909ae4e29224761d34c79025def"
             },
             "require": {
                 "league/container": "^4.0.0",
-                "nikic/fast-route": "2.0.x-dev"
+                "nikic/fast-route": "2.0.x-dev",
+                "psr/container": "2.0.x-dev",
+                "symfony/dotenv": "7.1.x-dev"
             },
             "require-dev": {
                 "symfony/var-dumper": "7.1.x-dev"
@@ -251,6 +253,83 @@
             "install-path": "../psr/container"
         },
         {
+            "name": "symfony/dotenv",
+            "version": "7.1.x-dev",
+            "version_normalized": "7.1.9999999.9999999-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/dotenv.git",
+                "reference": "d9759e3cbd4f8e8128a503d70711aad46de60145"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/dotenv/zipball/d9759e3cbd4f8e8128a503d70711aad46de60145",
+                "reference": "d9759e3cbd4f8e8128a503d70711aad46de60145",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.2"
+            },
+            "conflict": {
+                "symfony/console": "<6.4",
+                "symfony/process": "<6.4"
+            },
+            "require-dev": {
+                "symfony/console": "^6.4|^7.0",
+                "symfony/process": "^6.4|^7.0"
+            },
+            "time": "2023-12-10T16:55:05+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Dotenv\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Registers environment variables from a .env file",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "dotenv",
+                "env",
+                "environment"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/dotenv/tree/7.1"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "install-path": "../symfony/dotenv"
+        },
+        {
             "name": "symfony/polyfill-mbstring",
             "version": "1.x-dev",
             "version_normalized": "1.9999999.9999999.9999999-dev",
@@ -344,12 +423,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "cf0220fc7607476fd0d001ab3ed9e830d1fdda56"
+                "reference": "01615b5d2cc519362c4f2ac02b0b845a3282aec0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/cf0220fc7607476fd0d001ab3ed9e830d1fdda56",
-                "reference": "cf0220fc7607476fd0d001ab3ed9e830d1fdda56",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/01615b5d2cc519362c4f2ac02b0b845a3282aec0",
+                "reference": "01615b5d2cc519362c4f2ac02b0b845a3282aec0",
                 "shasum": ""
             },
             "require": {
@@ -367,7 +446,7 @@
                 "symfony/uid": "^6.4|^7.0",
                 "twig/twig": "^3.0.4"
             },
-            "time": "2023-11-27T12:39:18+00:00",
+            "time": "2023-12-10T16:54:46+00:00",
             "bin": [
                 "Resources/bin/var-dump-server"
             ],

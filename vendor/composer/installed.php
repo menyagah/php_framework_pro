@@ -31,7 +31,7 @@
         'menyagah/myphp-framework' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'af0763c25f1987fd5d075644774a1d799bfcd0e9',
+            'reference' => '09d5658b159c1909ae4e29224761d34c79025def',
             'type' => 'library',
             'install_path' => __DIR__ . '/../menyagah/myphp-framework',
             'aliases' => array(),
@@ -71,6 +71,15 @@
                 0 => '^1.0',
             ),
         ),
+        'symfony/dotenv' => array(
+            'pretty_version' => '7.1.x-dev',
+            'version' => '7.1.9999999.9999999-dev',
+            'reference' => 'd9759e3cbd4f8e8128a503d70711aad46de60145',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/dotenv',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'symfony/polyfill-mbstring' => array(
             'pretty_version' => '1.x-dev',
             'version' => '1.9999999.9999999.9999999-dev',
@@ -83,7 +92,7 @@
         'symfony/var-dumper' => array(
             'pretty_version' => '7.1.x-dev',
             'version' => '7.1.9999999.9999999-dev',
-            'reference' => 'cf0220fc7607476fd0d001ab3ed9e830d1fdda56',
+            'reference' => '01615b5d2cc519362c4f2ac02b0b845a3282aec0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/var-dumper',
             'aliases' => array(),

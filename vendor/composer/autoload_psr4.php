@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
     'Symfony\\Component\\VarDumper\\' => array($vendorDir . '/symfony/var-dumper'),
+    'Symfony\\Component\\Dotenv\\' => array($vendorDir . '/symfony/dotenv'),
     'Psr\\Container\\' => array($vendorDir . '/psr/container/src'),
     'MartinNyagah\\Framework\\' => array($vendorDir . '/menyagah/myphp-framework/src'),
     'League\\Container\\' => array($vendorDir . '/league/container/src'),
