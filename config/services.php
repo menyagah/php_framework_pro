@@ -2,6 +2,8 @@
 
 $container = new \League\Container\Container();
 
+$container->delegate(new League\Container\ReflectionContainer(true));
+
 $routes = include BASE_PATH . '/routes/web.php';
 
 $container->add(
@@ -13,5 +15,6 @@ $container->extend(MartinNyagah\Framework\Routing\RouterInterface::class)
     ->addMethodCall('setRoutes', [new \League\Container\Argument\Literal\ArrayArgument($routes)]);
 
 $container->add(MartinNyagah\Framework\Http\Kernel::class)
-    ->addArgument(MartinNyagah\Framework\Routing\RouterInterface::class);
+    ->addArgument(MartinNyagah\Framework\Routing\RouterInterface::class)
+    ->addArgument($container);
 return $container;

@@ -1,13 +1,20 @@
 <?php
 
 namespace App\Controller;
+use App\Widget;
 use MartinNyagah\Framework\Http\Response;
 
 class HomeController
 {
-    public static function index(): Response
+    public function __construct(
+        private Widget $widget
+    )
     {
-        $content = '<h1>Hello World</h1>';
+    }
+
+    public function index(): Response
+    {
+        $content = "<h1>Hello {$this->widget->name}</h1>";
         return  new Response($content);
     }
 }
